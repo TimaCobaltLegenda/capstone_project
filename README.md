@@ -2,6 +2,13 @@
 
 The script is structured to handle a series of CRUD (Create, Read, Update, Delete) operations involving three different CSV files (`Sales.csv`, Customers.csv, Parts.csv`) as a simple database system. The main functionality is distributed into three sections based on the `option parameter to add new records to the respective CSV file. Here's a breakdown of each part along with some suggested improvements:
 
+## Install & Run
+1. Install Python (https://www.python.org/downloads/)
+2. Clone the repository
+3. pip install -r requirements.txt
+4. Run the script using the command `python main.py`
+5. Follow the on-screen instructions to use the CLI application
+
 ## General Observations
 - `app_border` Function: This function is presumably used to print a decorative border and a message. However, its definition is not included. Ensure that it's defined elsewhere in your code to avoid runtime errors.
 - Code Repetition: The code for reading from and appending to CSV files is repeated multiple times. This could be refactored into separate functions to reduce redundancy and improve maintainability.
@@ -23,3 +30,4 @@ The script is structured to handle a series of CRUD (Create, Read, Update, Delet
 ### Option 3: Adding a Part Record
 - Adds a new part record without additional validation.
 - Improvement: Similar to other sections, validate part details (e.g., unique part_id, non-negative cost) before adding.
+
